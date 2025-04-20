@@ -1,9 +1,3 @@
-"""
-Configuration settings for the Gemini Agent Framework
-Current Date and Time (UTC): 2025-04-16 17:56:56
-Current User's Login: SAMBITMALLICK2003
-"""
-
 # Constants for audio configuration
 import pyaudio
 import datetime
