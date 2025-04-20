@@ -1,9 +1,3 @@
-"""
-Voice capture functionality for the Gemini Agent Framework
-Current Date and Time (UTC): 2025-04-16 17:36:12
-Current User's Login: SAMBITMALLICK2003
-"""
-
 import asyncio
 import wave
 import numpy as np
@@ -43,9 +37,6 @@ class VoiceCapture:
 
         # Find default speaker for capture without printing devices
         try:
-            # mics, speakers = AudioUtils.list_audio_devices()
-            # speaker = speakers[0]
-            # microphone = mics[1]
             speaker = AudioUtils.get_default_speaker()
             microphone = AudioUtils.get_default_microphone()
             if not speaker:
@@ -106,9 +97,6 @@ class VoiceCapture:
                             waiting_for_command = True
                             buffer_after_wakeword = []
                             silence_count = 0
-
-                            # Sending an initial greeting to make interaction more fluid
-                            # await out_queue.put({"text": "I'm ready to help you."})
 
                     # In command listening mode (after wake word, before sending to Gemini)
                     elif waiting_for_command:
