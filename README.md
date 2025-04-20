@@ -6,7 +6,7 @@
 A sophisticated AI meeting assistant powered by Google's Gemini API with wake word detection, real-time transcription, and an elegant PyQt-based user interface.
 
 <p align="center">
-  <img src="docs/images/meeting_copilot_ui.png" alt="Meeting Copilot UI" width="800"/>
+  <img src="docs/images/meeting_copilot_ui.png.jpg" alt="Meeting Copilot UI" width="800"/>
 </p>
 
 ## 🌟 Features
