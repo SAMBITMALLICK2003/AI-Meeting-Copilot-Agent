@@ -1,9 +1,3 @@
-"""
-Google API authentication utilities
-Current Date and Time (UTC): 2025-04-16 17:44:46
-Current User's Login: SAMBITMALLICK2003
-"""
-
 import os.path
 import logging
 from google.oauth2.credentials import Credentials
