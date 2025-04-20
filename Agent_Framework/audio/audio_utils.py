@@ -1,9 +1,3 @@
-"""
-Utility functions for audio device management and processing
-Current Date and Time (UTC): 2025-04-16 17:36:12
-Current User's Login: SAMBITMALLICK2003
-"""
-
 import soundcard as sc
 import warnings
 
