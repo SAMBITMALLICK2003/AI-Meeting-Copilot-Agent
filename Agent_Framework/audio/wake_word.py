@@ -1,9 +1,3 @@
-"""
-Wake word detection functionality
-Current Date and Time (UTC): 2025-04-16 17:36:12
-Current User's Login: SAMBITMALLICK2003
-"""
-
 import threading
 import time
 import traceback
@@ -90,8 +84,6 @@ class WakeWordDetector:
                     # Get the score for the single model
                     model_name = list(self.owwModel.models.keys())[0]
                     score = 0
-                    # score = self.owwModel.prediction_buffer[model_name][-1]
-
 
                     file_path = str(Path(__file__).resolve().parent.parent.parent / "meeting_storage" / "transcription.txt")
                     # Read file content
@@ -180,7 +172,6 @@ class SleepWordDetector(WakeWordDetector):
                     # Get the score for the single model
                     model_name = list(self.owwModel.models.keys())[0]
                     score = 0
-                    # score = self.owwModel.prediction_buffer[model_name][-1]
 
                     file_path = str(
                         Path(__file__).resolve().parent.parent.parent / "meeting_storage" / "transcription.txt")
