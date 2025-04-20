@@ -43,7 +43,8 @@ A sophisticated AI meeting assistant powered by Google's Gemini API with wake wo
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/gemini-agent-framework.git
-   cd gemini-agent-framework
+   cd AI-Meeting-Copilot-Lusine-
+  
    ```
 
 2. Create and activate a virtual environment:
@@ -51,8 +52,6 @@ A sophisticated AI meeting assistant powered by Google's Gemini API with wake wo
    python -m venv .venv
    # On Windows
    .venv\Scripts\activate
-   # On macOS/Linux
-   source .venv/bin/activate
    ```
 
 3. Install the required dependencies:
