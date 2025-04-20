@@ -272,51 +272,6 @@ def add_printing_handlers(
             api.add_event_handler(ServerMessageType.AddTranscript, transcript_handler)
 
 
-
-
-# class SoundcardStreamWrapper:
-#     def __init__(self, speaker, sample_rate):
-#         """
-#         Initialize a wrapper for soundcard's speaker capture
-#
-#         Args:
-#             speaker: The soundcard speaker object to capture from
-#             sample_rate: The sample rate to use for recording
-#         """
-#         self.speaker = speaker
-#         self.sample_rate = sample_rate
-#         self.mic = None
-#         self.chunk_frames = 1024  # Number of frames to read at once
-#
-#     def __enter__(self):
-#         # Create a recorder from the speaker with loopback enabled
-#         self.mic = sc.get_microphone(id=str(self.speaker.name), include_loopback=True).recorder(
-#             samplerate=self.sample_rate
-#         )
-#         self.mic.__enter__()
-#         return self
-#
-#     def __exit__(self, exc_type, exc_val, exc_tb):
-#         if self.mic:
-#             self.mic.__exit__(exc_type, exc_val, exc_tb)
-#
-#     def read(self, frames):
-#         """Read audio data from the speaker loopback
-#
-#         Converts from float32 [-1.0, 1.0] to bytes in the format expected by Speechmatics
-#         """
-#         if not self.mic:
-#             return bytes()
-#
-#         # Read audio data (returns float32 in range [-1.0, 1.0])
-#         data = self.mic.record(numframes=self.chunk_frames)
-#
-#         # Take first channel if stereo
-#         audio_mono = data[:, 0] if data.ndim > 1 else data
-#
-#         # Convert to bytes in the expected format (pcm_f32le/be)
-#         return audio_mono.tobytes()
-
 class SoundcardStreamWrapper:
     def __init__(self, speaker, microphone, sample_rate):
         """
@@ -457,7 +412,6 @@ async def transcribe_from_speaker(speechmatics_client, language: str, max_delay)
         return
 
     # Use the first speaker
-    # speaker = speakers[0]
     print(f"Using speaker: {speaker.name}")
 
     with SoundcardStreamWrapper(speaker, microphone, frame_rate) as stream:
