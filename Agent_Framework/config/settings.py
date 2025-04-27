@@ -1,3 +1,9 @@
+"""
+Configuration settings for the Gemini Agent Framework
+Current Date and Time (UTC): 2025-04-16 17:56:56
+Current User's Login: SAMBITMALLICK2003
+"""
+
 # Constants for audio configuration
 import pyaudio
 import datetime
@@ -6,6 +12,20 @@ from llama_index.llms.gemini import Gemini
 from dotenv import load_dotenv
 import os
 load_dotenv()
+
+
+# Microsoft Configuration
+MS_SCOPES = [
+    'https://graph.microsoft.com/Calendars.ReadWrite',
+    'https://graph.microsoft.com/OnlineMeetings.ReadWrite',
+    'https://graph.microsoft.com/User.Read',
+    'offline_access'
+]
+MS_CLIENT_ID = os.getenv('AZURE_CLIENT_ID')
+MS_CLIENT_SECRET = os.getenv('AZURE_CLIENT_SECRET')
+MS_TENANT_ID = os.getenv('AZURE_TENANT_ID')
+MS_REDIRECT_URI = 'http://localhost:5000/callback'
+MS_TOKEN_FILE = "ms_token.json"  # Stores token in the current directory
 
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
@@ -17,7 +37,7 @@ WAKEWORD_CHUNK_SIZE = 1280
 WAKEWORD_THRESHOLD = 0.5  # Slightly lower threshold for faster detection
 DEFAULT_WAKEWORD_MODEL = r"alexa"  # Default wake word model to use
 # DEFAULT_SLEEPWORD_MODEL = r"C:\Users\snigd\Aignite_meeting_copilot\Lib\site-packages\openwakeword\resources\models\hey_jarvis_v0.1.tflite"
-DEFAULT_SLEEPWORD_MODEL = r"mute"
+DEFAULT_SLEEPWORD_MODEL = r"C:\Users\Sambit Mallick\Desktop\mlops\Aignite_Lusine\.venv\Lib\site-packages\openwakeword\resources\models\mute.tflite"
 INACTIVITY_TIMEOUT = 15  # Seconds before returning to wake word mode
 SILENCE_THRESHOLD = 50
 MIN_COMMAND_SILENCE_FRAMES = 20  # About 0.5 seconds of silence

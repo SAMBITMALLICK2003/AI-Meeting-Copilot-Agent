@@ -106,6 +106,10 @@ class LiveAgent(BaseAgent):
                 parameters=types.Schema(
                     type=types.Type.OBJECT,
                     properties={
+                        "platform": types.Schema(
+                            type=types.Type.STRING,
+                            description=f"REQUIRED. Platform will be mentioned as 'Microsoft' or 'Google'. Microsoft Teams or Teams refers to 'Microsoft', Google Meet will be referred as 'Google'. "
+                        ),
                         "date_str": types.Schema(
                             type=types.Type.STRING,
                             description=f"REQUIRED. Today's date is {today_date}. The specific date for the meeting. You MUST resolve relative dates like 'today', 'tomorrow', 'next Friday' based on the current date provided (e.g., {today_date}) and provide the result EXCLUSIVELY in 'YYYY-MM-DD' format."
@@ -146,6 +150,10 @@ class LiveAgent(BaseAgent):
                 parameters=types.Schema(
                     type=types.Type.OBJECT,
                     properties={
+                        "platform": types.Schema(
+                            type=types.Type.STRING,
+                            description=f"REQUIRED. Platform will be mentioned as 'Microsoft' or 'Google'. Microsoft Teams or Teams refers to 'Microsoft', Google Meet will be referred as 'Google'. "
+                        ),
                         "start_date_str": types.Schema(
                             type=types.Type.STRING,
                             description=f"REQUIRED. The start date for the search range. Today is {today_date}. Resolve relative dates (e.g., 'today', 'yesterday', 'next Monday') to 'YYYY-MM-DD' format."
