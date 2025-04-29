@@ -144,6 +144,11 @@ example_copilot_ui.py        # PyQt5 UI application entry point
 Configure API keys and settings in `Agent_framework/config/settings.py`:
 
 ```python
+# Microsoft Graph API configuration
+MS_TENANT_ID = "your-tenant-id"
+MS_CLIENT_ID = "your-client-id"
+MS_CLIENT_SECRET = "your-client-secret"
+
 # Gemini API configuration
 MODEL = "models/gemini-2.0-flash-live-001"
 API_KEY = "your-gemini-api-key"
@@ -167,7 +172,7 @@ Customize the agent's personality and capabilities by modifying the system promp
 
 ### Calendar Integration
 
-The agent includes Microsoft and Google Calendar integration for:
+The agent includes Microsoft Graph and Google Calendar integration for:
 - Scheduling meetings with Microsoft Teams or Google Meet links
 - Retrieving upcoming calendar events
 - Managing appointments
