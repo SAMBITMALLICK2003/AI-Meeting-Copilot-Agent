@@ -42,8 +42,8 @@ A sophisticated AI meeting assistant powered by Google's Gemini API with wake wo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/gemini-agent-framework.git
-   cd AI-Meeting-Copilot-Lusine-
+   git clone https://github.com/SAMBITMALLICK2003/AI-Meeting-Copilot-Agent.git
+   cd AI-Meeting-Copilot-Agent
   
    ```
 
