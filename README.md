@@ -127,7 +127,8 @@ Agent_framework/
   │   └── transcription_help.py # Speechmatics integration
   └── utils/                 # Utility functions
       ├── google_auth.py     # Google API authentication
-      └── logger.py          # Logging configuration
+      ├── logger.py          # Logging configuration
+      └── microsoft_auth.py  # Microsoft authentication
 
 static/                      # Web interface files
 meeting_storage/             # Storage for meeting transcriptions
