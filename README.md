@@ -14,7 +14,7 @@ A sophisticated AI meeting assistant powered by Google's Gemini API with wake wo
 - **Voice-Activated AI Assistant**: Wake word ("Alexa") activation and voice deactivation ("mute")
 - **Real-time Meeting Transcription**: Capture and transcribe meeting content using Speechmatics
 - **Natural Language Processing**: Engaging conversations with context retention
-- **Calendar Management**: Schedule meetings and retrieve Google Calendar events
+- **Calendar Management**: Schedule meetings and retrieve Microsoft Teams and Google Calendar events
 - **Multi-modal Interaction**: 
   - **Screen Sharing**: AI can see your screen when requested
   - **Camera Integration**: Visual context through camera
@@ -167,8 +167,8 @@ Customize the agent's personality and capabilities by modifying the system promp
 
 ### Calendar Integration
 
-The agent includes Google Calendar integration for:
-- Scheduling meetings with Google Meet links
+The agent includes Microsoft and Google Calendar integration for:
+- Scheduling meetings with Microsoft Teams or Google Meet links
 - Retrieving upcoming calendar events
 - Managing appointments
 
