@@ -14,7 +14,7 @@ A sophisticated AI meeting assistant powered by Google's Gemini API with wake wo
 - **Voice-Activated AI Assistant**: Wake word ("Alexa") activation and voice deactivation ("mute")
 - **Real-time Meeting Transcription**: Capture and transcribe meeting content using Speechmatics
 - **Natural Language Processing**: Engaging conversations with context retention
-- **Calendar Management**: Schedule meetings and retrieve Microsoft Teams and Google Calendar events
+- **Calendar Management**: Schedule and retrieve meetings from Microsoft Teams and Google Meet
 - **Multi-modal Interaction**: 
   - **Screen Sharing**: AI can see your screen when requested
   - **Camera Integration**: Visual context through camera
@@ -134,7 +134,9 @@ static/                      # Web interface files
 meeting_storage/             # Storage for meeting transcriptions
 output_storage/              # Storage for agent outputs
 storage/                     # RAG vector storage
-example_copilot_ui.py        # PyQt5 UI application entry point
+app.py                       # Main application entry point
+chat_with_ai_tab.py          # LLM chat tab
+meeting_copilot_ui.py        # PyQt5-based GUI for live transcription, AI-generated meeting summaries, and AI chat interface
 ```
 
 ## 🔧 Configuration
