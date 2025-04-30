@@ -1,4 +1,4 @@
-# Team Lusine - Live Meeting Copilot (AIgnite 2025)
+# Team Lusine - Live Meeting Copilot
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-brightgreen)
