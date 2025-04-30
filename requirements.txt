@@ -1,3 +1,14 @@
-flask>=2.0.0
-flask-cors>=3.0.10
-werkzeug>=2.0.0
+speechmatics-python
+soundcard
+google-genai
+openwakeword
+pyaudio
+llama-index
+llama-index-llms-gemini
+llama-index-embeddings-gemini
+google_auth_oauthlib
+mss
+opencv-python
+PyQt5
+sentence_transformers
+groq
